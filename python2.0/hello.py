@@ -8,7 +8,7 @@ import time
 
 app = Flask(__name__)
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'atel13579'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
 app.config['MYSQL_DATABASE_DB'] = 'DeviceData'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql = MySQL()
