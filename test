@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+from flask import Flask
+import time
+from flaskext.mysql import MySQL
+
+app = Flask(__name__)
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = '1024'
+app.config['MYSQL_DATABASE_DB'] = 'DeviceData'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+mysql = MySQL()
+mysql.init_app(app)
+
+@app.route('/hello')
+def hello_world():
+    return 'Hello,World!'
+
+@app.route('/<path:subpath>')
+def show_subpath(subpath):
+    data = subpath
+    grap = data.split("/",3)
+    print(grap[0],grap[1],grap[2])
+    return subpath
+
+if __name__ == '__main__':
+    app.run(debug=True)
