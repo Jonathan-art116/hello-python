@@ -1,18 +1,17 @@
-  #app.py
-  the code by zhong
+###app.py
+the code by zhong
 
-  hell.py 
-  #the code bt lcj
+###hell.py 
+the code bt lcj
 
-  #photo.py 
-  test code
+###photo.py 
+test code
 
-  #rosetta.py  
-  web server
+###rosetta.py  
+web server
   
-  wav_to_binary.py
-  #wav_to_pcm & 0xff write to binary
+###wav_to_binary.py
+wav_to_pcm & 0xff write to binary
   
-  
-  wav_tools.py
-  #get wav file info.
+###wav_tools.py
+get wav file info.
