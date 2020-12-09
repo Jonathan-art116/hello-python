@@ -14,4 +14,4 @@ Web server.
 Wav_to_pcm & 0xff write to binary.
   
 ## wav_tools.py
-Get wav file info.
+Get wav file info.(this code copy from github)
